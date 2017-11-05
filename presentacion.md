@@ -25,7 +25,7 @@ Es una revisión al estándar C++ 98, y el que más se enseña en la universidad
 
 ### Siguientes estándares
 
-Los primeros cambios que modernizan C++ se dan en este estándar, y cubriremos muchos de ellos.
+Los primeros cambios que modernizan C++ se dan en C++ 11, y cubriremos muchos de ellos.
 C++ 14 es una revisión a este estándar.
 
 C++ 17 es el último estándar ISO aprobado. El próximo será previsiblemente C++ 20.
@@ -192,7 +192,7 @@ public:
   void f2(std::vector<uint32_t>);
 };
 
-class Bar {
+class Bar : public Foo {
 public:
   void f(); // Error
   void f2(std::vector<int>) override; // Error
